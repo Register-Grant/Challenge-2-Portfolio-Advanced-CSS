@@ -54,6 +54,18 @@ p {
     background-position: center;
 }
 
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/*
+img {
+    height: 230px;
+    width: 190px;
+}
+*/
+
 .links {
     width: 75%;
     display: inline-block;
@@ -86,7 +98,7 @@ p {
 }
 
 .hustle-a, .hustle-b, .hustle-c {
-    margin-bottom: 32px;
+    margin-bottom: 250px;
     color: #ffffff;
 }
 
