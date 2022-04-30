@@ -1,6 +1,3 @@
-:root {
-    --main-color: whitesmoke;
-}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,14 +6,13 @@
 
 body {
     background-color: slategrey;
-    color: var(--main-color);
 }
 
 .header {
-    background-color: slateblue;
-    color: var(--main-color);
     padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: slategrey;
+    color: whitesmoke;
 }
 
 .header h1 {
@@ -24,14 +20,18 @@ body {
     font-size: 35px;
 }
 
-.header main {
+.header div {
     float: right;
     padding-top: 9px;
     margin-right: 20px;
     font-size: 20px;
 }
 
-.header main ul li {
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -42,24 +42,16 @@ a {
 }
 
 p {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .hero {
-    height: 550px;
+    height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../paintings/eiffel-tower-dancing.jpg");
     background-size: cover;
     background-position: center;
-}
-
-.picture {
-    width: 300px;
-    height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .links {
@@ -68,10 +60,57 @@ p {
     margin-left: 20px;
 }
 
-.about-me, .work-you-wish-you-did, .contact-info {
-    width: 75%;
-    border: 5px solid whitesmoke;
+.side-hustle {
+    margin-right: 20px;
     padding: 20px;
-    margin: 5px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
 }
 
+.about-me, .work-you-wish-you-did, .contact-info {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.about-me h2, .work-you-wish-you-did h2, .contact-info h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.hustle-a, .hustle-b, .hustle-c {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.hustle-a h3, .hustle-b h3, .hustle-c h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*
+@media screen and (max-width: 992px) {
+    .links {
+      width: 50%;
+    }
+    body {
+      background: #772014;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .links {
+      width: 100%;
+    }
+    body {
+      background: #8ac4ff;
+    }
+  }
+*/
