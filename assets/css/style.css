@@ -13,6 +13,9 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: slategrey;
     color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .header h1 {
@@ -58,13 +61,16 @@ p {
     float: right;
     margin-left: 25px;
 }
-
 /*
 img {
-    height: 230px;
-    width: 190px;
-}
-*/
+    width: 200px;
+    height: 250px;
+    background-color: lightblue;
+    margin: 20px;
+    padding: 20px;
+    border: 9px solid darkblue;
+  }
+  */
 
 .links {
     width: 75%;
@@ -74,8 +80,7 @@ img {
 
 .side-hustle {
     margin-right: 20px;
-    padding: 20px;
-    clear: both;
+    padding: 10px;
     float: right;
     width: 20%;
     height: 100%;
@@ -107,13 +112,13 @@ img {
     text-align: center;
 }
 
-/*
 @media screen and (max-width: 992px) {
     .links {
-      width: 50%;
+      width: 75%;
     }
-    body {
-      background: #772014;
+    .header {
+      background: orangered;
+      justify-content: space-evenly;
     }
   }
 
@@ -121,8 +126,8 @@ img {
     .links {
       width: 100%;
     }
-    body {
-      background: #8ac4ff;
+    .header {
+      background: chartreuse;
+      justify-content: space-evenly;
     }
   }
-*/
